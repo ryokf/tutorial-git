@@ -18,27 +18,40 @@
 </head>
 
 <body>
-    <pre>git init : untuk menginisialisasi folder sebagai repo git</pre>
-    <pre>git status : untuk melihat status repo kita</pre>
-    <pre>git add : untuk memasukkan file kita ke staging area (melacak perubahan file)
-            => git add /nama file/
-            => /nama file/ bisa menggunakan . untuk melacak semua file
-            => harus dilakukan sebelum commit
+    <pre>git init       : untuk menginisialisasi folder sebagai repo git</pre>
+    <pre>git status     : untuk melihat status repo kita</pre>
+    <pre>git add        : untuk memasukkan file kita ke staging area (melacak perubahan file)
+                        => git add /nama file/
+                        => /nama file/ bisa menggunakan . untuk melacak semua file
+                        => harus dilakukan sebelum commit
     </pre>
-    <pre>git commit : untuk menyimpan perubahan pada file kita
-            => git commit -m /pesan commit/
-            => /pesan commit/ berisi deskripsi mengenai perubahan yang kita lakukan
+    <pre>git commit     : untuk menyimpan perubahan pada file kita
+                        => git commit -m /pesan commit/
+                        => /pesan commit/ berisi deskripsi mengenai perubahan yang kita lakukan
     </pre>
-    <pre>git log : melihat commit yang sudah pernah kita lakukan
-            =>git log -/angka/
-            =>/angka/ berisi jumlah berapa commit terakhir yang ingin ditampilkan
-            =>git log -- /nama file/ (untuk melihat commit pada file tertentu)
-            =>/nama file/ berisi nama file yang yang ingin dilihat history-nya
+    <pre>git log        : melihat commit yang sudah pernah kita lakukan
+                        => git log -/angka/
+                        => /angka/ berisi jumlah berapa commit terakhir yang ingin ditampilkan
+                        => git log -- /nama file/ (untuk melihat commit pada file tertentu)
+                        => /nama file/ berisi nama file yang yang ingin dilihat history-nya
+                        => git log --all --decorate --oneline --graph (untuk melihat log secara visual)
     </pre>
-    <pre>git checkout : mengembalikan kondisi file di commit tertentu
-            =>git checkout /5 digit pertama hash commit/ -- /nama file/
-            =>/nama file/ berisi nama file yang ingin di checkout
-            =>/nama file/ dapat dikosongi jika ingin checkout semua file
+    <pre>git checkout   : mengembalikan kondisi file di commit tertentu
+                        => git checkout /5 digit pertama hash commit/ -- /nama file/
+                        => /nama file/ berisi nama file yang ingin di checkout
+                        => /nama file/ dapat dikosongi jika ingin checkout semua file
+                        => git checkout /nama branch/ untuk berpindah branch
+    </pre>
+    <pre>git branch     : melihat branch yang ada
+                        => git branch /nama branch/ (membuat branch baru)
+                        => git branc -d /nama branch/ (menghapus branch)
+                        => git branc -D /nama branch/ (menghapus branch dengan paksa)
+                        => git branch --merged (melihat branch apa saja yang sudah di merge)
+
+    </pre>
+    <pre>git merge      : menggabungkan branch
+                        => git merge /nama branch/
+                        => /nama branch/ berisi branch yang ingin di merge
     </pre>
 
 </body>
